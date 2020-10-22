@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ic_image"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Item icon" />
+        <!--app:srcCompat="@drawable/layschips_background"-->
+
+
+    <TextView
+        android:id="@+id/ic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/ic_quantity"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/ic_image"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ic_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_title"
+        android:layout_alignStart="@+id/ic_title"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="₹250"
+        android:textColor="#750000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ic_rate"
+        android:layout_toEndOf="@id/ic_rate"
+        android:text="x"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/ic_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_rate"
+        android:visibility="invisible"
+        android:layout_alignEnd="@+id/ic_rate"
+        android:text="₹300"/>
+
+    <TextView
+        android:id="@+id/ic_quantity"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:id="@+id/ic_icon_done"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ic_quantity"
+        android:layout_alignParentEnd="true"
+        android:foreground="@drawable/ic_baseline_radio_button_unchecked_24"
+        />
+    
+</RelativeLayout>

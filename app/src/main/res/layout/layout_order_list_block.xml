@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/olb_orderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:textSize="23dp"
+        android:text="21"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/olb_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/olb_orderId"
+        android:text="Shreyanshu Malviya"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/olb_numberOfItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@+id/olb_userName"
+        android:layout_alignParentEnd="true"
+        android:text="43"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/olb_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/olb_userName"
+        android:layout_toStartOf="@+id/olb_numberOfItems"
+        android:layout_toEndOf="@+id/olb_orderId"
+        android:text="Holi chowk, Shanichara ward 2, Hoshangabad"
+        android:textColor="#000" />
+</RelativeLayout>
